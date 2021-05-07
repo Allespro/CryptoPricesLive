@@ -86,7 +86,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                 ]);
               }),
             ),
-            Positioned(
+            /*Positioned(
               left: 17.0,
               top: 118.0,
               right: null,
@@ -94,13 +94,13 @@ class GeneratedHomeWidget extends StatelessWidget {
               width: 17.0,
               height: 1.0,
               child: GeneratedLine7Widget(),
-            ),
+            ),*/
             Positioned(
               left: 17.0,
               top: 117.5,
               right: null,
               bottom: null,
-              width: 123.0,
+              width: MediaQuery.of(context).size.width - 17.0,
               height: 0.0,
               child: GeneratedLine8Widget(),
             ),
