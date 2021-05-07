@@ -4,7 +4,6 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/Generate
 import 'package:flutterapp/crypto_20coins_20liveapp/generatedsettingwidget/GeneratedSettingWidget.dart';
 
 void main() {
-  print(MediaQuery.of(context).size.width);
   runApp(Crypto_20Coins_20LiveApp());
 }
 
