@@ -9,7 +9,7 @@ class Generated24HrsChangeWidget extends StatelessWidget {
     return Text(
       '''24 Hrs Change''',
       overflow: TextOverflow.visible,
-      textAlign: TextAlign.center,
+      textAlign: TextAlign.left,
       style: TextStyle(
         height: 1.171875,
         fontSize: 14.0,
