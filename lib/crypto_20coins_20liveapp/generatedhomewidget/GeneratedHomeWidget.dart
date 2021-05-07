@@ -121,6 +121,15 @@ class GeneratedHomeWidget extends StatelessWidget {
               width: 343.0,
               height: 84.0,
               child: GeneratedBTCblockWidget(),
+            ),
+            Positioned(
+              left: 14.0,
+              top: 128.0 + 84.0 + 20.0,
+              right: null,
+              bottom: null,
+              width: 343.0,
+              height: 84.0,
+              child: GeneratedBTCblockWidget(),
             )
           ]),
         ),
