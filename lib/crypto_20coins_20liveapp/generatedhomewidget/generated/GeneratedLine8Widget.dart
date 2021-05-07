@@ -8,7 +8,7 @@ class GeneratedLine8Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100.0,
+      width: MediaQuery.of(context).size.width - 17.0,
       height: 0.0,
       child: SvgWidget(painters: [
         SvgPathPainter.stroke(
@@ -19,7 +19,7 @@ class GeneratedLine8Widget extends StatelessWidget {
           ..setLinearGradient(
             startX: 0.0,
             startY: 0.0,
-            endX: MediaQuery.of(context).size.width - 107.0,
+            endX: MediaQuery.of(context).size.width,
             endY: 0.0,
             colors: [
               Color.fromARGB(255, 255, 255, 255),
