@@ -8,14 +8,14 @@ class GeneratedLine8Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width - 17.0,
+      width: MediaQuery.of(context).size.width - (17.0*2),
       height: 0.0,
       child: SvgWidget(painters: [
         SvgPathPainter.stroke(
           1.0,
           strokeJoin: StrokeJoin.miter,
         )
-          ..addPath('M0 0.5L'+(MediaQuery.of(context).size.width - 17.0).toInt().toString()+' 0.5L'+(MediaQuery.of(context).size.width - 17.0).toInt().toString()+' -0.5L0 -0.5L0 0.5Z')
+          ..addPath('M0 0.5L'+(MediaQuery.of(context).size.width).toInt().toString()+' 0.5L'+(MediaQuery.of(context).size.width).toInt().toString()+' -0.5L0 -0.5L0 0.5Z')
           ..setLinearGradient(
             startX: 0.0,
             startY: 0.0,
