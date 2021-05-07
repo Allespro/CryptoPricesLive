@@ -19,7 +19,7 @@ class GeneratedLine8Widget extends StatelessWidget {
           ..setLinearGradient(
             startX: 0.0,
             startY: 0.0,
-            endX: MediaQuery.of(context).size.width - 17.0,
+            endX: MediaQuery.of(context).size.width,
             endY: 0.0,
             colors: [
               Color.fromARGB(255, 255, 255, 255),
