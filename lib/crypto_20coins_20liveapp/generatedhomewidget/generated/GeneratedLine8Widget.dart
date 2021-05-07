@@ -16,7 +16,17 @@ class GeneratedLine8Widget extends StatelessWidget {
           strokeJoin: StrokeJoin.miter,
         )
           ..addPath('M0 0.5L'+(MediaQuery.of(context).size.width).toInt().toString()+' 0.5L'+(MediaQuery.of(context).size.width/2).toInt().toString()+' -0.5L0 -0.5L0 0.5Z')
-
+          ..setLinearGradient(
+            startX: 0.0,
+            startY: 0.0,
+            endX: MediaQuery.of(context).size.width,
+            endY: 0.0,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(255, 255, 255, 255)
+            ],
+            colorStops: [0.0, 1.0],
+          ),
       ]),
     );
   }
