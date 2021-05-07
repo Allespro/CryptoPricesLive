@@ -54,7 +54,7 @@ class GeneratedBTCblockWidget extends StatelessWidget {
               width: 11.0,
               height: 0.0,
               child: GeneratedArrowdownWidget(),
-            ),
+            )/*,
             Positioned(
               left: null,
               top: 36.0,
@@ -63,7 +63,7 @@ class GeneratedBTCblockWidget extends StatelessWidget {
               width: 11.0,
               height: 0.0,
               child: GeneratedArrowupWidget(),
-            )
+            )*/
           ]),
     );
   }
