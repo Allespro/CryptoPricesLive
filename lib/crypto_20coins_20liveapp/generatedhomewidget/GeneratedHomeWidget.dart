@@ -96,7 +96,7 @@ class GeneratedHomeWidget extends StatelessWidget {
               child: GeneratedLine7Widget(),
             ),*/
             Positioned(
-              left: 17.0,
+              left: 0.0,
               top: 117.5,
               right: null,
               bottom: null,
