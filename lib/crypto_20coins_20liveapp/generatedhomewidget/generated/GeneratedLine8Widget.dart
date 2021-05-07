@@ -8,7 +8,7 @@ class GeneratedLine8Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
+      width: MediaQuery.of(context).size.width - 17.0,
       height: 0.0,
       child: SvgWidget(painters: [
         SvgPathPainter.stroke(
