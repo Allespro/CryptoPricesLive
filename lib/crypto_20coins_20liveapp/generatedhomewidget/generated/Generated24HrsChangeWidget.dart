@@ -13,6 +13,7 @@ class Generated24HrsChangeWidget extends StatelessWidget {
       style: TextStyle(
         height: 1.171875,
         fontSize: 14.0,
+        textAlign: TextAlign.center,
         fontFamily: 'Muli',
         fontWeight: FontWeight.w400,
         color: Color.fromARGB(255, 255, 255, 255),
