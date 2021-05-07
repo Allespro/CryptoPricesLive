@@ -123,7 +123,7 @@ class GeneratedHomeWidget extends StatelessWidget {
               child: GeneratedBTCblockWidget(),
             ),
             Positioned(
-              left: 1.0,
+              left: 14.0,
               top: 128.0 + 84.0 + 20.0,
               right: null,
               bottom: null,
