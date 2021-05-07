@@ -9,14 +9,13 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedsplashscreenwidget/
 class GeneratedSplashscreenWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    print(MediaQuery.of(context).size.width);
     return Material(
         child: GestureDetector(
       onTap: () => Navigator.pushNamed(context, '/GeneratedHomeWidget'),
       child: ClipRRect(
         borderRadius: BorderRadius.zero,
         child: Container(
-          width: 375.0,
+          width: MediaQuery.of(context).size.width,
           height: 812.0,
           child: Stack(fit: StackFit.expand, alignment: Alignment.center, overflow: Overflow.visible, children: [
             ClipRRect(
