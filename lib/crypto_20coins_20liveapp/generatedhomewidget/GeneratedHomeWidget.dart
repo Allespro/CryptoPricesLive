@@ -91,7 +91,7 @@ class GeneratedHomeWidget extends StatelessWidget {
               top: 118.0,
               right: null,
               bottom: null,
-              width: MediaQuery.of(context).size.width - 17.0,
+              width: 17.0,
               height: 1.0,
               child: GeneratedLine7Widget(),
             ),
