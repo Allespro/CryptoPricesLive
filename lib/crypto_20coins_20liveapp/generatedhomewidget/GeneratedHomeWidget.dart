@@ -96,7 +96,7 @@ class GeneratedHomeWidget extends StatelessWidget {
               child: GeneratedLine7Widget(),
             ),
             Positioned(
-              left: MediaQuery.of(context).size.width / 2,
+              left: MediaQuery.of(context).size.width / 2.0,
               top: 117.5,
               right: null,
               bottom: null,
