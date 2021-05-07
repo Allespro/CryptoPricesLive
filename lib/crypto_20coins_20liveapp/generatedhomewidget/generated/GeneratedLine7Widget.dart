@@ -14,7 +14,7 @@ class GeneratedLine7Widget extends StatelessWidget {
         c: 0.00,
         d: 1.00,
         child: Container(
-          width: MediaQuery.of(context).size.width,
+          width: MediaQuery.of(context).size.width - 17.0,
           height: 1.0,
           child: SvgWidget(painters: [
             SvgPathPainter.stroke(
