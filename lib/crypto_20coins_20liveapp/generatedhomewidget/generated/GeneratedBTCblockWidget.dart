@@ -24,7 +24,7 @@ class GeneratedBTCblockWidget extends StatelessWidget {
               top: 0.0,
               right: null,
               bottom: null,
-              width: 343.0,
+              width: MediaQuery.of(context).size.width - 14.0,
               height: 84.0,
               child: GeneratedRectangle10Widget(),
             ),
