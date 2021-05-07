@@ -17,9 +17,9 @@ class GeneratedLine8Widget extends StatelessWidget {
         )
           ..addPath('M0 0.5L123 0.5L123 -0.5L0 -0.5L0 0.5Z')
           ..setLinearGradient(
-            startX: 123.00000366568577,
+            startX: 0.0,
             startY: 0.0,
-            endX: 0.0,
+            endX: MediaQuery.of(context).size.width - 17.0,
             endY: 0.0,
             colors: [
               Color.fromARGB(255, 255, 255, 255),
