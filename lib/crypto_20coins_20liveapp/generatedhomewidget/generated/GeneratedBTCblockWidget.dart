@@ -12,7 +12,7 @@ class GeneratedBTCblockWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 343.0,
+      width: MediaQuery.of(context).size.width - 14.0,
       height: 84.0,
       child: Stack(
           fit: StackFit.expand,
