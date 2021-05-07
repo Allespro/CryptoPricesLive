@@ -48,7 +48,7 @@ class GeneratedBTCblockWidget extends StatelessWidget {
             ),
             Positioned(
               left: null,
-              top: 47.0,
+              top: 84.0/2,
               right: 49.0,
               bottom: null,
               width: 11.0,
