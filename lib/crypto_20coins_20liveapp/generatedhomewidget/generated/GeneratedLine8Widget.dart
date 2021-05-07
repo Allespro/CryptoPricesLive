@@ -25,7 +25,7 @@ class GeneratedLine8Widget extends StatelessWidget {
               Color.fromARGB(255, 255, 255, 255),
               Color.fromARGB(255, 255, 255, 255)
             ],
-            colorStops: [0.0, 1.0],
+            colorStops: [0.0, 0.5, 1.0],
           ),
       ]),
     );
