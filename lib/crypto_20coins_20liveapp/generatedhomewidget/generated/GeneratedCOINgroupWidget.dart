@@ -25,7 +25,7 @@ class GeneratedCOINgroupWidget extends StatelessWidget {
               top: 27.0,
               right: null,
               bottom: null,
-              width: 54.0,
+              width: 100.0,
               height: 23.0,
               child: GeneratedPRICEWidget(coin_price),
             ),
