@@ -34,14 +34,7 @@ class GeneratedHomeWidget extends StatelessWidget {
     }));
     print(jsonDecode(response.body));
     var jsonData = jsonDecode(response.body);
-    List<Coin> coins = [];
-    for (var c in jsonData) {
-      Coin coin = Coin(c['bitcoin']);
-      coins.add(coin);
-      print(coin);
-    }
-    print(coins);
-    return coins;
+    return jsonData;
   }
 
   @override
