@@ -57,7 +57,11 @@ print('Response body: ${response.body}');
   */
 class GeneratedHomeWidget extends StatelessWidget {
   late Future<Album> futureAlbum;
-  futureAlbum = fetchAlbum();
+  @override
+  void initState() {
+    super.initState();
+    futureAlbum = fetchAlbum();
+  }
   
   @override
   Widget build(BuildContext context) {
