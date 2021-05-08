@@ -31,7 +31,7 @@ class GeneratedHomeWidget extends StatelessWidget {
   getCoinData() async {
     var response = await http.get(Uri.https('jsonplaceholder.typicode.com','posts'));
     var jsonData = jsonDecode(response.body);
-    List.<Coin> coins = [];
+    List<Coin> coins = [];
     for(var c in jsonData){
       Coin coin = Coin(u['userId'], u['id']);
       coins.add(coin);
