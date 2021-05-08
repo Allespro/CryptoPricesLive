@@ -30,7 +30,7 @@ print('Response body: ${response.body}');
 class GeneratedHomeWidget extends StatelessWidget {
   getCoinData() async {
     var response = await http.get(Uri.https('jsonplaceholder.typicode.com','posts'));
-    print(response.body);
+    print(jsonDecode(response.body));
     var jsonData = jsonDecode(response.body);
     List<Coin> coins = [];
     for(var c in jsonData){
