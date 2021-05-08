@@ -143,7 +143,7 @@ class GeneratedHomeWidget extends StatelessWidget {
             ),
             Positioned(
               left: 14.0,
-              top: 128.0 + 84.0 + 20.0,
+              top: 128.0 + (84.0 + 20.0) * 0,
               right: null,
               bottom: null,
               width: MediaQuery.of(context).size.width - 14.0,
@@ -160,7 +160,7 @@ class GeneratedHomeWidget extends StatelessWidget {
             ) ,
             Positioned(
               left: 14.0,
-              top: 128.0 + 84.0 + 20.0,
+              top: 128.0 + (84.0 + 20.0) * 1,
               right: null,
               bottom: null,
               width: MediaQuery.of(context).size.width - 14.0,
@@ -172,6 +172,23 @@ class GeneratedHomeWidget extends StatelessWidget {
                     return GeneratedBTCblockWidget('loading', 'loading');
                   } else
                     return GeneratedBTCblockWidget('ethereum',snapshot.data['ethereum']['usd'].toString());
+                },
+              ),
+            ),
+            Positioned(
+              left: 14.0,
+              top: 128.0 + (84.0 + 20.0) * 2,
+              right: null,
+              bottom: null,
+              width: MediaQuery.of(context).size.width - 14.0,
+              height: 84.0,
+              child: FutureBuilder(
+                future: getCoinData(),
+                builder: (context, snapshot) {
+                  if (snapshot.data == null) {
+                    return GeneratedBTCblockWidget('loading', 'loading');
+                  } else
+                    return GeneratedBTCblockWidget('monero',snapshot.data['monero']['usd'].toString());
                 },
               ),
             )
