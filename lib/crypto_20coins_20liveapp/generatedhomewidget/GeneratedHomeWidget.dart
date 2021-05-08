@@ -58,7 +58,6 @@ print('Response body: ${response.body}');
 class GeneratedHomeWidget extends StatelessWidget {
   @override
   void initState() {
-    super.initState();
     futureAlbum = fetchAlbum();
   }
   @override
