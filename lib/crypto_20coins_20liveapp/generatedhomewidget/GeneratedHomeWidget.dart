@@ -29,7 +29,7 @@ print('Response body: ${response.body}');
   */
 class GeneratedHomeWidget extends StatelessWidget {
   getCoinData() async {
-    var response = await http.get(Uri.https('api.coingecko.com','/api/v3/simple/price'), {'ids': 'bitcoin,ethereum', 'vs_currencies': 'usd'});
+    var response = await http.get(Uri.https('api.coingecko.com','/api/v3/simple/price', {'ids': 'bitcoin,ethereum', 'vs_currencies': 'usd'}));
     print(jsonDecode(response.body));
     var jsonData = jsonDecode(response.body);
     List<Coin> coins = [];
