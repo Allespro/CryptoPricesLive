@@ -10,9 +10,7 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-Future<http.Response> fetchAlbum() {
-  return http.get(Uri.https('jsonplaceholder.typicode.com', 'albums/1'));
-}
+
 
 class Album {
   final int userId;
