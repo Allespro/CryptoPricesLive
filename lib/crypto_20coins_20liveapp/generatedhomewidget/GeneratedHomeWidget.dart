@@ -14,7 +14,7 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
   */
 class GeneratedHomeWidget extends StatelessWidget {
   GetCoinPrices coin_request = GetCoinPrices('bitcoin,ethereum', 'usd');
-  //coin_request.display();
+  coin_request.display();
   @override
   Widget build(BuildContext context) {
     return Material(

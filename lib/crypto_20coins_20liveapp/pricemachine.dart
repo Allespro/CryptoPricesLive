@@ -16,6 +16,6 @@ class GetCoinPrices {
     var response = await http.get(uri);
     String json = response.body;
     print(json);*/
-    print(coins);
+    print('coins');
   }
 }
