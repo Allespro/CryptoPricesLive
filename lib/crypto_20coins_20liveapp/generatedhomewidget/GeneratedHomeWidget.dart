@@ -8,7 +8,7 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
 import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generated/GeneratedLine8Widget.dart';
 import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generated/GeneratedLine7Widget.dart';
 
-class GetCoinPrices {
+class GetCoinPrices extends StatelessWidget {
   GetCoinPrices.24hr_change(String coins, String fiat) { 
     var queryParameters = {
       'ids': coins,
