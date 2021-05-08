@@ -43,9 +43,11 @@ class GeneratedHomeWidget extends StatelessWidget {
     return response.data;
   }
   @override
-  await getData().then((value){
-    print(value);
-  })
+  async print('object'){
+    await getData().then((value){
+      print(value);
+    });
+  }
   Widget build(BuildContext context) {
     return Material(
         child: ClipRRect(
