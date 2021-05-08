@@ -1,34 +1,48 @@
 import 'dart:convert';
-import 'package:flutterhttpgetpost/get_prod.dart';
-import 'package:http/http.dart' as http;
+import 'package:http/http.dart';
+import 'package:flutter/foundation.dart';
 
-class servicewrapper {
-  var baseurl = "http://androidtutorial.blueappsoftware.com//";
-  var apifolder = "webapi/";
-// see complete url --
-// http://androidtutorial.blueappsoftware.com/webapi/get_jsondata.php
-  Future<get_prod> getProdCall() async {
-    var url = baseurl + apifolder + "get_jsondata.php";
-    final body = {
-      'language': 'default',
-      'securecode': '123'
-    };
-    final bodyjson = json.encode(body);
-    // pass headers parameters if any
-    final response = await http.post(url,
-        headers: <String, String>{
-          'Content-Type': 'application/json; charset=UTF-8'
-        },
-        body: bodyjson);
-    print(" url call from " + url);
-    if (response.statusCode == 200) {
-      print('url hit successful' + response.body);
-      String data = response.body;
-      print(' prod name - ' + jsonDecode(data)['Information'][0]['name']);
-      return get_prod.fromJson(json.decode(response.body));
+class Post {
+  final int userId;
+  final int id;
+  final String title;
+  final String body;
+
+  Post({
+    @required this.userId,
+    @required this.id,
+    @required this.title,
+    @required this.body,
+  });
+
+  factory Post.fromJson(Map<String, dynamic> json) {
+    return Post(
+      userId: json['userId'] as int,
+      id: json['id'] as int,
+      title: json['title'] as String,
+      body: json['body'] as String,
+    );
+  }
+}
+
+class HttpService {
+  final String postsURL = "https://jsonplaceholder.typicode.com/posts";
+
+  Future<List<Post>> getPosts() async {
+    Response res = await get(postsURL);
+
+    if (res.statusCode == 200) {
+      List<dynamic> body = jsonDecode(res.body);
+
+      List<Post> posts = body
+        .map(
+          (dynamic item) => Post.fromJson(item),
+        )
+        .toList();
+
+      return posts;
     } else {
-      print('failed to get data');
-      throw Exception('Failed to get data');
+      throw "Unable to retrieve posts.";
     }
   }
 }
