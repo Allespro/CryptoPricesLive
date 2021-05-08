@@ -12,14 +12,12 @@ import 'package:http/http.dart' as http;
 _makeGetRequest() async {
 
   // make request
-  Response response = await get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_currencies=usd&include_24hr_change=true');
 
-  // sample info available in response
-  int statusCode = response.statusCode;
-  Map<String, String> headers = response.headers;
-  String contentType = headers['content-type'];
-  String json = response.body;
-  print(json);
+
+var url = Uri.parse('https://api.coingecko.com/api/v3/simple/price');
+var response = await http.post(url, body: {'ids': 'bitcoin,ethereum', 'vs_currencies': 'usd'});
+print('Response status: ${response.statusCode}');
+print('Response body: ${response.body}');
   // TODO convert json to object...
 
 }
