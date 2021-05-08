@@ -33,8 +33,7 @@ class GeneratedHomeWidget extends StatelessWidget {
     var response = await http.get(Uri.https('api.coingecko.com', '/api/v3/simple/price', {
       'ids': 'bitcoin,ethereum',
       'vs_currencies': 'usd',
-      'include_24hr_change',
-      'true'
+      'include_24hr_change': 'true',
     }));
     //print(jsonDecode(response.body)['bitcoin']['usd']);
     var jsonData = jsonDecode(response.body);
