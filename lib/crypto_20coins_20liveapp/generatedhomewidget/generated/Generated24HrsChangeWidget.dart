@@ -9,12 +9,13 @@ class Generated24HrsChangeWidget extends StatelessWidget {
     return Text(
       '''24 Hrs Change''',
       overflow: TextOverflow.visible,
-      textAlign: TextAlign.left,
+      textAlign: TextAlign.center,
       style: TextStyle(
         height: 1.171875,
-        fontSize: 14.0,
+        fontSize: 18.0,
         fontFamily: 'Muli',
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.bold,
+        //fontWeight: FontWeight.w400,
         color: Color.fromARGB(255, 255, 255, 255),
 
         /* letterSpacing: 0.0, */

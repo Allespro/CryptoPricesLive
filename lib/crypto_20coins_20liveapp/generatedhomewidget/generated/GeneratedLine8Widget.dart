@@ -8,22 +8,22 @@ class GeneratedLine8Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 123.0,
+      width: MediaQuery.of(context).size.width,
       height: 0.0,
       child: SvgWidget(painters: [
         SvgPathPainter.stroke(
           1.0,
           strokeJoin: StrokeJoin.miter,
         )
-          ..addPath('M0 0.5L123 0.5L123 -0.5L0 -0.5L0 0.5Z')
+          ..addPath('M0 0.5L'+(MediaQuery.of(context).size.width).toInt().toString()+' 0.5L'+(MediaQuery.of(context).size.width).toInt().toString()+' -0.5L0 -0.5L0 0.5Z')
           ..setLinearGradient(
-            startX: 123.00000366568577,
+            startX: 0.0,
             startY: 0.0,
-            endX: 0.0,
+            endX: MediaQuery.of(context).size.width,
             endY: 0.0,
             colors: [
-              Color.fromARGB(255, 142, 0, 255),
-              Color.fromARGB(255, 211, 0, 203)
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(255, 255, 255, 255)
             ],
             colorStops: [0.0, 1.0],
           ),

@@ -15,47 +15,43 @@ class GeneratedSplashscreenWidget extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.zero,
         child: Container(
-          width: 375.0,
+          width: MediaQuery.of(context).size.width,
           height: 812.0,
-          child: Stack(
-              fit: StackFit.expand,
-              alignment: Alignment.center,
-              overflow: Overflow.visible,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.zero,
-                  child: Container(
-                    color: Color.fromARGB(255, 250, 250, 250),
-                  ),
-                ),
-                Positioned(
-                  left: 0.0,
-                  top: 0.0,
-                  right: null,
-                  bottom: null,
-                  width: 375.0,
-                  height: 499.0,
-                  child: GeneratedUnionWidget(),
-                ),
-                Positioned(
-                  left: 0.0,
-                  top: 518.0,
-                  right: null,
-                  bottom: null,
-                  width: 159.0,
-                  height: 41.0,
-                  child: GeneratedCryptopriceslivev01Widget(),
-                ),
-                Positioned(
-                  left: 139.0,
-                  top: 263.0,
-                  right: null,
-                  bottom: null,
-                  width: 133.0,
-                  height: 133.0,
-                  child: GeneratedGroup109Widget(),
-                )
-              ]),
+          child: Stack(fit: StackFit.expand, alignment: Alignment.center, overflow: Overflow.visible, children: [
+            ClipRRect(
+              borderRadius: BorderRadius.zero,
+              child: Container(
+                color: Color.fromARGB(255, 250, 250, 250),
+              ),
+            ),
+            Positioned(
+              left: 0.0,
+              top: 0.0,
+              right: null,
+              bottom: null,
+              width: 375.0,
+              height: 499.0,
+              child: GeneratedUnionWidget(),
+            ),
+            Positioned(
+              left: 0.0,
+              top: 518.0,
+              right: null,
+              bottom: null,
+              width: 159.0,
+              height: 41.0,
+              child: GeneratedCryptopriceslivev01Widget(),
+            ),
+            Positioned(
+              left: 139.0,
+              top: 263.0,
+              right: null,
+              bottom: null,
+              width: 133.0,
+              height: 133.0,
+              child: GeneratedGroup109Widget(),
+            )
+          ]),
         ),
       ),
     ));
