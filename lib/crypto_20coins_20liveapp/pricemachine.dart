@@ -1,3 +1,5 @@
+import 'package:http/http.dart' as http;
+
 class GetCoinPrices {
   String coins;
   String fiat;
