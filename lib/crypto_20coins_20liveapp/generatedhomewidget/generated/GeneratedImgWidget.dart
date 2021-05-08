@@ -14,7 +14,7 @@ class GeneratedImgWidget extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.zero,
         child: Image.asset(
-          "assets/images/coin_logos/"+coin_name+".png",
+          "assets/images/"+coin_name+".png",
           color: null,
           fit: BoxFit.cover,
           width: 45.0,
