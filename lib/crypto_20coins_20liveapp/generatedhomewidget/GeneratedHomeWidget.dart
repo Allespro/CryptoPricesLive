@@ -13,7 +13,6 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:async';
 
-
 /*
 _makeGetRequest() async {
 
@@ -29,11 +28,14 @@ print('Response body: ${response.body}');
   */
 class GeneratedHomeWidget extends StatelessWidget {
   getCoinData() async {
-    var response = await http.get(Uri.https('api.coingecko.com','/api/v3/simple/price', {'ids': 'bitcoin,ethereum', 'vs_currencies': 'usd'}));
+    var response = await http.get(Uri.https('api.coingecko.com', '/api/v3/simple/price', {
+      'ids': 'bitcoin,ethereum',
+      'vs_currencies': 'usd'
+    }));
     print(jsonDecode(response.body));
     var jsonData = jsonDecode(response.body);
     List<Coin> coins = [];
-    for(var c in jsonData){
+    for (var c in jsonData) {
       Coin coin = Coin(c['bitcoin']);
       coins.add(coin);
       print(coin);
@@ -41,6 +43,7 @@ class GeneratedHomeWidget extends StatelessWidget {
     print(coins);
     return coins;
   }
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -151,10 +154,11 @@ class GeneratedHomeWidget extends StatelessWidget {
               height: 84.0,
               child: FutureBuilder(
                 future: getCoinData(),
-                builder: (context, snapshot){
-                  if(snapshot.data == null){
+                builder: (context, snapshot) {
+                  if (snapshot.data == null) {
                     return GeneratedBTCblockWidget('loading');
-                  } else return GeneratedBTCblockWidget(snapshot.data.lenght);
+                  } else
+                    return GeneratedBTCblockWidget(snapshot.data.lenght);
                 },
               ),
             ),
@@ -182,7 +186,6 @@ class GeneratedHomeWidget extends StatelessWidget {
     ));
   }
 }
-
 
 class Coin {
   final String coin_name;
