@@ -151,7 +151,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                   if (snapshot.data == null) {
                     return GeneratedBTCblockWidget('loading');
                   } else
-                    return GeneratedBTCblockWidget(snapshot.data.lenght);
+                    return GeneratedBTCblockWidget(snapshot.data);
                 },
               ),
             ),
