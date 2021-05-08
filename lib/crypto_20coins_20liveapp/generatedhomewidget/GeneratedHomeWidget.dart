@@ -29,12 +29,12 @@ print('Response body: ${response.body}');
   */
 class GeneratedHomeWidget extends StatelessWidget {
   getCoinData() async {
-    var response = await http.get(Uri.https('jsonplaceholder.typicode.com','posts'));
+    var response = await http.get(Uri.https('api.coingecko.com','api/v3/simple/price'), body: {'ids': 'bitcoin,ethereum', 'vs_currencies': 'usd'});
     print(jsonDecode(response.body));
     var jsonData = jsonDecode(response.body);
     List<Coin> coins = [];
     for(var c in jsonData){
-      Coin coin = Coin(c['userId'], c['id']);
+      Coin coin = Coin(c['bitcoin']);
       coins.add(coin);
       print(coin);
     }
@@ -185,6 +185,6 @@ class GeneratedHomeWidget extends StatelessWidget {
 
 
 class Coin {
-  final String userId, id;
-  Coin(this.userId, this.id);
+  final String coin_name;
+  Coin(this.coin_name);
 }
