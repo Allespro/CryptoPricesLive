@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
   */
 class GeneratedImgWidget extends StatelessWidget {
   String coin_name;
-  GeneratedImgWidget(this.coin_name)
+  GeneratedImgWidget(this.coin_name);
   @override
   Widget build(BuildContext context) {
     return Container(
