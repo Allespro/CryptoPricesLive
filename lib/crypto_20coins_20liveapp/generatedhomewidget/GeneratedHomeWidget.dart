@@ -10,7 +10,7 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
 
 //import 'package:flutterapp/crypto_20coins_20liveapp/pricemachine.dart';
 import 'package:http/http.dart' as http;
-import 'dart:convert' as JSON;
+import 'dart:convert';
 import 'dart:async';
 
 
