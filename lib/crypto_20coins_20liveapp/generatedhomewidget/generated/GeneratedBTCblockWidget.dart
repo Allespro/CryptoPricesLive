@@ -38,7 +38,7 @@ class GeneratedBTCblockWidget extends StatelessWidget {
               bottom: null,
               width: 105.0,
               height: 46.0,
-              child: GeneratedCOINgroupWidget(coin_name),
+              child: GeneratedCOINgroupWidget(coin_name, coin_price),
             ),
             Positioned(
               left: null,
