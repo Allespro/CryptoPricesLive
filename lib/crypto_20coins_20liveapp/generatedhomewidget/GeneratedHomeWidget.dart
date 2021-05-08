@@ -8,6 +8,8 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
 import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generated/GeneratedLine8Widget.dart';
 import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generated/GeneratedLine7Widget.dart';
 
+import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generated/BlockGenerator.dart';
+
 //import 'package:flutterapp/crypto_20coins_20liveapp/pricemachine.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -30,7 +32,9 @@ class GeneratedHomeWidget extends StatelessWidget {
   getCoinData() async {
     var response = await http.get(Uri.https('api.coingecko.com', '/api/v3/simple/price', {
       'ids': 'bitcoin,ethereum',
-      'vs_currencies': 'usd'
+      'vs_currencies': 'usd',
+      'include_24hr_change',
+      'true'
     }));
     //print(jsonDecode(response.body)['bitcoin']['usd']);
     var jsonData = jsonDecode(response.body);
@@ -149,12 +153,12 @@ class GeneratedHomeWidget extends StatelessWidget {
                 future: getCoinData(),
                 builder: (context, snapshot) {
                   if (snapshot.data == null) {
-                    return GeneratedBTCblockWidget('loading', 'loading');
+                    return BlockGenerator('loading');
                   } else
-                    return GeneratedBTCblockWidget('bitcoin',snapshot.data['bitcoin']['usd'].toString());
+                    return BlockGenerator(snapshot.data);
                 },
               ),
-            ),
+            ) /*,
             Positioned(
               left: 14.0,
               top: 128.0 + 84.0 + 20.0,
@@ -171,7 +175,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                     return GeneratedBTCblockWidget('ethereum',snapshot.data['ethereum']['usd'].toString());
                 },
               ),
-            )
+            )*/
           ]),
         ),
         Positioned(
