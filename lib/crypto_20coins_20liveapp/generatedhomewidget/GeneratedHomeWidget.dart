@@ -32,7 +32,7 @@ class GeneratedHomeWidget extends StatelessWidget {
       'ids': 'bitcoin,ethereum',
       'vs_currencies': 'usd'
     }));
-    print(jsonDecode(response.body)['bitcoin']['usd']);
+    //print(jsonDecode(response.body)['bitcoin']['usd']);
     var jsonData = jsonDecode(response.body);
     return jsonData;
   }
@@ -151,7 +151,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                   if (snapshot.data == null) {
                     return GeneratedBTCblockWidget('loading');
                   } else
-                    return GeneratedBTCblockWidget(snapshot.data['bitcoin']['usd']);
+                    return GeneratedBTCblockWidget(snapshot.data['bitcoin']['usd'].toString());
                 },
               ),
             ),
