@@ -10,7 +10,7 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
   */
 class GeneratedBTCblockWidget extends StatelessWidget {
   GeneratedBTCblockWidget(String engine) { 
-      print(this.engine); 
+      print(engine); 
   } 
   @override
   Widget build(BuildContext context) {
