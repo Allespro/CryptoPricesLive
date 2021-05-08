@@ -1,7 +1,7 @@
 class GetCoinPrices {
   String coins;
   String fiat;
-  GetCoinPrices(this.name, this.age);
+  GetCoinPrices(this.coins, this.fiat);
   void display() {
     var queryParameters = {
       'ids': this.coins,
