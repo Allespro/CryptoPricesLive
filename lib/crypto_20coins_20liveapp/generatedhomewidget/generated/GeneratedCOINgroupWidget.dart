@@ -45,7 +45,7 @@ class GeneratedCOINgroupWidget extends StatelessWidget {
               bottom: null,
               width: 45.0,
               height: 45.0,
-              child: GeneratedImgWidget(),
+              child: GeneratedImgWidget(coin_name),
             )
           ]),
     );
