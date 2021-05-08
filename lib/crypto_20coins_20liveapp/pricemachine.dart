@@ -22,14 +22,3 @@ class GetCoinPrices {
 }
 */
 
-class GetCoinPrices{
- 
-  String coins;
-  String fiat;
-     
-  GetCoinPrices(this.coins, this.fiat);
-     
-    void display(){
-        print("Coins: $coins Fiat: $fiat");
-    }
-}
