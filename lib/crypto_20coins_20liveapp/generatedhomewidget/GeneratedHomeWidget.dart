@@ -8,6 +8,8 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
 import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generated/GeneratedLine8Widget.dart';
 import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generated/GeneratedLine7Widget.dart';
 import 'package:http/http.dart' as http;
+import 'dart:async';
+import 'dart:io';
 
 _makeGetRequest() async {
 
