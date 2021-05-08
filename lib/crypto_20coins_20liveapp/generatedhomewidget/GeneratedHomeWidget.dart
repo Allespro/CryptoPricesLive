@@ -120,7 +120,7 @@ class GeneratedHomeWidget extends StatelessWidget {
               bottom: null,
               width: MediaQuery.of(context).size.width - 14.0,
               height: 84.0,
-              child: GeneratedBTCblockWidget(),
+              child: GeneratedBTCblockWidget('123'),
             ),
             Positioned(
               left: 14.0,
