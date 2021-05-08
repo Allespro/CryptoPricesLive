@@ -32,7 +32,7 @@ class GeneratedHomeWidget extends StatelessWidget {
       'ids': 'bitcoin,ethereum',
       'vs_currencies': 'usd'
     }));
-    print(jsonDecode(response.body));
+    print(jsonDecode(response.body)['bitcoin']['usd']);
     var jsonData = jsonDecode(response.body);
     return jsonData;
   }
