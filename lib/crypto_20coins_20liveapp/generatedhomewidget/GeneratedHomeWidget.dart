@@ -151,7 +151,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                   if (snapshot.data == null) {
                     return GeneratedBTCblockWidget('loading');
                   } else
-                    return GeneratedBTCblockWidget(snapshot.data['bitcoin']['usd'].toString());
+                    return GeneratedBTCblockWidget('bitcoin',snapshot.data['bitcoin']['usd'].toString());
                 },
               ),
             ),
@@ -162,7 +162,15 @@ class GeneratedHomeWidget extends StatelessWidget {
               bottom: null,
               width: MediaQuery.of(context).size.width - 14.0,
               height: 84.0,
-              child: GeneratedBTCblockWidget('456'),
+              child: FutureBuilder(
+                future: getCoinData(),
+                builder: (context, snapshot) {
+                  if (snapshot.data == null) {
+                    return GeneratedBTCblockWidget('loading');
+                  } else
+                    return GeneratedBTCblockWidget('ethereum',snapshot.data['ethereum']['usd'].toString());
+                },
+              ),
             )
           ]),
         ),
