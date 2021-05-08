@@ -33,7 +33,7 @@ class GeneratedHomeWidget extends StatelessWidget {
     var jsonData = jsonDecode(response.body);
     List<Coin> coins = [];
     for(var c in jsonData){
-      Coin coin = Coin(u['userId'], u['id']);
+      Coin coin = Coin(c['userId'], c['id']);
       coins.add(coin);
     }
     print(coins);
@@ -147,7 +147,14 @@ class GeneratedHomeWidget extends StatelessWidget {
               bottom: null,
               width: MediaQuery.of(context).size.width - 14.0,
               height: 84.0,
-              child: GeneratedBTCblockWidget('123'),
+              child: FutureBuilder(
+                future: getCoinData(),
+                builder: (context, snapshot){
+                  if(snapshot.data == null){
+                    return GeneratedBTCblockWidget('loading');
+                  } else return GeneratedBTCblockWidget(snapshot.data)
+                },
+              ),
             ),
             Positioned(
               left: 14.0,
