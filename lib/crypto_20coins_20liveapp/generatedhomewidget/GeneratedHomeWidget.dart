@@ -35,6 +35,7 @@ class GeneratedHomeWidget extends StatelessWidget {
     for(var c in jsonData){
       Coin coin = Coin(c['userId'], c['id']);
       coins.add(coin);
+      print(coin);
     }
     print(coins);
     return coins;
