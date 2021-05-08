@@ -9,7 +9,7 @@ class GetCoinPrices {
       'include_24hr_change': 'true',
     };
     var uri = Uri.https('api.coingecko.com', '/api/v3/simple/price', queryParameters);
-    var response = http.get(uri);
+    var response = await http.get(uri);
     return response;
   }
 }
