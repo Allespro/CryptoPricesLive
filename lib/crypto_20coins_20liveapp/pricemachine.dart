@@ -4,8 +4,8 @@ class GetCoinPrices {
   GetCoinPrices(this.coins, this.fiat);
   void display() {
     var queryParameters = {
-      'ids': this.coins,
-      'vs_currencies2': this.fiat,
+      'ids': coins,
+      'vs_currencies2': fiat,
       'include_24hr_change',
       'true',
     };
