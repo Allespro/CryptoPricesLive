@@ -4,7 +4,7 @@ class GetCoinPrices {
   String coins;
   String fiat;
   GetCoinPrices(this.coins, this.fiat);
-  String display() async {
+  Future display() async {
     var queryParameters = {
       'ids': coins,
       'vs_currencies2': fiat,
