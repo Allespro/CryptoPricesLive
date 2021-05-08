@@ -11,4 +11,4 @@ try {
 }
 
 }
-get_price
+get_price();
