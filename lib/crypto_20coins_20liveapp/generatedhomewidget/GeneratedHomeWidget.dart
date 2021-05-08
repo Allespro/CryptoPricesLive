@@ -149,7 +149,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                 future: getCoinData(),
                 builder: (context, snapshot) {
                   if (snapshot.data == null) {
-                    return GeneratedBTCblockWidget('loading');
+                    return GeneratedBTCblockWidget('loading', 'loading');
                   } else
                     return GeneratedBTCblockWidget('bitcoin',snapshot.data['bitcoin']['usd'].toString());
                 },
@@ -166,7 +166,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                 future: getCoinData(),
                 builder: (context, snapshot) {
                   if (snapshot.data == null) {
-                    return GeneratedBTCblockWidget('loading');
+                    return GeneratedBTCblockWidget('loading', 'loading');
                   } else
                     return GeneratedBTCblockWidget('ethereum',snapshot.data['ethereum']['usd'].toString());
                 },
