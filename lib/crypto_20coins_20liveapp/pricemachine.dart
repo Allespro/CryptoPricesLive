@@ -1,5 +1,7 @@
 import 'package:http/http.dart' as http;
-var client = http.Client();
+
+void get_price(){
+  var client = http.Client();
 try {
   var uriResponse = await client.post(Uri.parse('https://example.com/whatsit/create'),
       body: {'name': 'doodle', 'color': 'blue'});
@@ -7,3 +9,6 @@ try {
 } finally {
   client.close();
 }
+
+}
+get_price
