@@ -152,7 +152,7 @@ class GeneratedHomeWidget extends StatelessWidget {
                 builder: (context, snapshot){
                   if(snapshot.data == null){
                     return GeneratedBTCblockWidget('loading');
-                  } else return GeneratedBTCblockWidget(snapshot.data);
+                  } else return GeneratedBTCblockWidget(snapshot.data.lenght);
                 },
               ),
             ),
