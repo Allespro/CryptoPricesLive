@@ -11,7 +11,7 @@ import 'package:flutterapp/crypto_20coins_20liveapp/generatedhomewidget/generate
 class GeneratedBTCblockWidget extends StatelessWidget {
   String coin_name;
   String coin_price;
-  GeneratedBTCblockWidget(self.coin_name, self.coin_price);
+  GeneratedBTCblockWidget(this.coin_name, this.coin_price);
   @override
   Widget build(BuildContext context) {
     return Container(
